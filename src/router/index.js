@@ -1,5 +1,4 @@
 
-import ExplanationPage from '@/pages/ExplanationPage.vue';
 import IntroPage from '@/pages/IntroPage.vue';
 import DescriptionPage from '@/pages/DescriptionPage.vue';
 import LoadingPage from '@/pages/LoadingPage.vue';
