@@ -224,6 +224,6 @@
 }
 
 .go-back-to-start-button:hover {
-  background-color: #d1d5db; 
+  background-color: #252525; 
 }
 </style>
