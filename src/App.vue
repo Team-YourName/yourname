@@ -27,6 +27,11 @@ watch(
   box-sizing: border-box;
 }
 
+/* header, main, footer {
+  padding: 20px;
+  text-align: center;
+} */
+
 @media (max-width: 600px) {
   #app {
     width: 100%;
