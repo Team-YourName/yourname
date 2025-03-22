@@ -143,7 +143,19 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
+
+const gender = route.query.gender;
+const type = route.query.type;
+const meanings = route.query.meanings;
+const mbti = route.query.mbti;
+
+console.log('Gender:', gender);
+console.log('Type:', type);
+console.log('Meanings:', meanings);
+console.log('MBTI:', mbti);
 </script>
 
 <style scoped>
