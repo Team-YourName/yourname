@@ -23,12 +23,18 @@
             <button class="share-button">Share</button>
             </div>
             <button class="go-back-to-start-button">Go Back To Start</button>
+            <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
         </div>
     </div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+const goToIntro = () => {
+  router.push('/'); 
+};
 </script>
 
 <style scoped>
@@ -206,7 +212,7 @@
 }
 
 .share-button:hover {
-  background-color: #d1d5db; 
+  background-color: #252525; 
 }
 
 .go-back-to-start-button {
