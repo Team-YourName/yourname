@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div class="start">
+        <div class="start" @click="goToDescription">
             START
         </div>
 
@@ -120,7 +120,13 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const goToDescription = () => {
+  router.push('/description'); 
+};
 
 </script>
 

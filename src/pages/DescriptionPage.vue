@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        <div class="start">
+        <div class="start" @click="goToQuestionGender">
             START
         </div>
 
@@ -121,7 +121,13 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const goToQuestionGender = () => {
+  router.push('/question-gender'); 
+};
 </script>
 
 <style scoped>

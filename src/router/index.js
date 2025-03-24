@@ -3,10 +3,10 @@ import IntroPage from '@/pages/IntroPage.vue';
 import DescriptionPage from '@/pages/DescriptionPage.vue';
 import LoadingPage from '@/pages/LoadingPage.vue';
 import ResultPage from '@/pages/ResultPage.vue';
-import QuestiongGenderPage from '@/pages/QuestiongGenderPage.vue';
-import QuestiongTypePage from '@/pages/QuestiongTypePage.vue';
-import QuestiongMeaningPage from '@/pages/QuestiongMeaningPage.vue';
-import QuestiongMbtiPage from '@/pages/QuestiongMbtiPage.vue';
+import QuestionGenderPage from '@/pages/QuestionGenderPage.vue';
+import QuestionTypePage from '@/pages/QuestionTypePage.vue';
+import QuestionMeaningPage from '@/pages/QuestionMeaningPage.vue';
+import QuestionMbtiPage from '@/pages/QuestionMbtiPage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -28,22 +28,22 @@ const routes = [
 {
     path: '/question-gender',
     name: 'QuestionGenderPage',
-    component: QuestiongGenderPage,
+    component: QuestionGenderPage,
 },
 {
     path: '/question-type',
     name: 'QuestionTypePage',
-    component: QuestiongTypePage,
+    component: QuestionTypePage,
 },
 {
     path: '/question-meaning',
     name: 'QuestionMeaningPage',
-    component: QuestiongMeaningPage,
+    component: QuestionMeaningPage,
 },
 {
     path: '/question-mbti',
     name: 'QuestionMbtiPage',
-    component: QuestiongMbtiPage,
+    component: QuestionMbtiPage,
 },
 {
     path: '/result',

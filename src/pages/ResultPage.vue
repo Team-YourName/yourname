@@ -1,11 +1,14 @@
 <template>
+  <div> 
     <div>
       <h2 class="title">So, 
             <br>What’s your name?</h2>
             <p class="title2">I am...</p>
     </div>
+  </div>
+
     <div class="container">
-        <div class="line"></div>
+        <div class="line"></div>      
         <div>
             <h1 class="name">Colin</h1>
             <div class="content-container">
@@ -14,25 +17,104 @@
             </div>
             
             <p class="other-names mb-2">또 다른 이름이 궁금하신가요?</p>
-            <a href="https://www.example.com" class="link-button">또 다른 이름 보기</a>
+            <a href="#" class="link-button" @click.prevent="goToIntro">또 다른 이름 보기</a>
         </div>
 
         <div class="button-container">
             <div class="save-share-container">
-            <button class="save-button">Save</button>
-            <button class="share-button">Share</button>
+            <button class="save-button" @click="downloadImage">Save</button>
+            <button class="share-button" @click="shareContent">Share</button>
             </div>
-            <button class="go-back-to-start-button">Go Back To Start</button>
+            <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
         </div>
     </div>
+
+    <div v-show="isGeneratingImage" id="capture">
+    <h2 class="title">So, 
+        <br>What’s your name?</h2>
+        <p class="title2">I am...</p>
+      <div class="container">
+        <div class="line"></div>
+        <h1 class="name mt-3" style="margin-top: 76px;">Colin</h1>
+        <div class="content-container" style="margin-top: 380px;">
+          <p class="content">
+            Colin 은 강하고 씩씩하다는 뜻의 이름이예요. 호불호없이 무난한 이름으로, 당신의 독립적인 성격과 매우 잘 어울리네요! 선택하신 #도전적인 #밝은 #멋진 느낌들을 반영해보았어요!
+          </p>
+        </div>
+      </div>
+  </div>
+ 
 </template>
 
 <script setup>
+import { ref, nextTick } from 'vue';
+import html2canvas from 'html2canvas';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const isGeneratingImage = ref(false);
+
+const downloadImage = () => {
+  isGeneratingImage.value = true;
+
+  document.fonts.ready.then(() => {
+    nextTick(() => {
+      const element = document.getElementById('capture');
+
+    html2canvas(element, {
+      scale: 2,
+    })
+      .then((canvas) => {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'yourname-result.png';
+        link.click();
+      })
+      .catch((error) => {
+        console.error('이미지 저장 중 오류 발생:', error);
+      })
+      .finally(() => {
+        isGeneratingImage.value = false;
+      });
+  });
+});
+};
+
+const shareContent = () => {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: 'Your Name Result',
+        text: 'Check out my result from Your Name!',
+        url: window.location.href, // 현재 페이지 URL
+      })
+      .then(() => console.log('공유 성공'))
+      .catch((error) => console.error('공유 중 오류 발생:', error));
+  } else {
+    alert('공유 기능이 이 브라우저에서 지원되지 않습니다.');
+  }
+};
+
+const goToIntro = () => {
+  router.push('/'); 
+};
 
 </script>
 
 <style scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css); 
+
+#capture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 393px;
+  height: 852px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  z-index: -1;
+}
 
 .container {
   max-width: 400px;
@@ -42,6 +124,7 @@
 }
 
 .title {
+  font-family: 'San Francisco', sans-serif;
   position: absolute;
   width: 328px;
   height: 96px;
@@ -59,6 +142,7 @@
   color: #B4B4B4;
 }
 .title2 {
+  font-family: 'San Francisco', sans-serif;
   position: absolute;
   width: 99px;
   height: 48px;
@@ -85,18 +169,16 @@
   left: -3px;
 }
 .name {
+  font-family: 'San Francisco', sans-serif;
   position: absolute;
   width: 163px;
   height: 76px;
   left: 115px;
   top: 234px;
-
-  font-family: 'San Francisco', sans-serif; 
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
   line-height: 76px;
-
   color: #252525;
 }
 .content-container {
@@ -206,7 +288,7 @@
 }
 
 .share-button:hover {
-  background-color: #d1d5db; 
+  background-color: #252525; 
 }
 
 .go-back-to-start-button {
