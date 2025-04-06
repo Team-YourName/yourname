@@ -1,4 +1,4 @@
-import names from "@/assets/yourname-mock-data.json";
+import names from "@/assets/yourname-name-data.json";
 
 export const keywords = {
     ATTRACTIVE: "ATTRACTIVE",       // 매력적인
