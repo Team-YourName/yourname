@@ -29,8 +29,8 @@
             </div>
         </div>
 
-          <div class="container">
-            <div class="name-circle !w-60 !max-w-[150px] !ml-[-3px]">
+        <div class="second-container">
+            <div class="name-circle !w-60 !max-w-[150px] !left-[-20px] !top-[554px] !ml-[-3px]">
                 <p class="name relative">Dustin
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -38,7 +38,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[158px]">
+            <div class="name-circle !w-40 !max-w-[130px] !left-[140px] !top-[554px] !ml-[-3px]">
                 <p class="name relative">Bella 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -46,7 +46,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[300px]">
+            <div class="name-circle !w-40 !max-w-[130px] !left-[280px] !top-[554px] !ml-[-3px]">
                 <p class="name">David 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -143,19 +143,33 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
+import { calculateScore } from '@/utils/NameScoreCalculator';
 
 const route = useRoute();
+const router = useRouter();
 
 const gender = route.query.gender;
-const type = route.query.type;
-const meanings = route.query.meanings;
+const trend = route.query.type;
+const meanings = route.query.meanings ? route.query.meanings.split(',') : [];
 const mbti = route.query.mbti;
 
-console.log('Gender:', gender);
-console.log('Type:', type);
-console.log('Meanings:', meanings);
-console.log('MBTI:', mbti);
+const calculateAndNavigate = async () => {
+  const recommendedNames = calculateScore(gender, trend, meanings, mbti);
+
+  localStorage.setItem('recommendedNames', JSON.stringify(recommendedNames));
+  localStorage.setItem('mbti', mbti);
+  localStorage.setItem('trend', trend);
+  localStorage.setItem('meanings', JSON.stringify(meanings));
+
+  router.push({
+    name: 'ResultPage'
+  });
+};
+
+setTimeout(()=> {
+    calculateAndNavigate();
+}, 3000); 
 </script>
 
 <style scoped>
@@ -198,9 +212,9 @@ console.log('MBTI:', mbti);
     flex-direction: column;
     padding: 15px 28px;
     position: absolute;
-    left: -23px;
+    /* left: -23px;
     bottom: 230px;
-    right: 69%;
+    right: 69%; */
     border: 2px solid #B4B4B4;
     border-radius: 100px;
     width: auto; 
