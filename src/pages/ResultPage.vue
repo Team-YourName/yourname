@@ -5,22 +5,19 @@
       <h2 class="title">So, 
             <br>What’s your name?</h2>
             <p class="title2">I am...</p>
+            <div class="line"></div>      
     </div>
   </div>
 
     <div class="container">
-        <div class="line"></div>      
-        <div>
-            <h1 class="name">{{ firstRecommendedName }}</h1>
             <div class="content-container">
+            <h1 class="name">{{ firstRecommendedName }}</h1>
                 <p class="content mb-4">{{ firstRecommendedName }}은 {{ firstRecommendedMean }}는 뜻의 
                 이름이예요. {{ trendDescription }} 이름으로, 당신의 {{ mbtiDescription }} 성격과 매우 잘 어울리네요! 
                 선택하신 {{ hashtagDescription }} 느낌들을 반영해보았어요!</p>
             </div>
-            
             <p class="other-names mb-2">또 다른 이름이 궁금하신가요?</p>
             <a href="#" class="link-button" @click.prevent="goToIntro">또 다른 이름 보기</a>
-        </div>
 
         <div class="button-container">
             <div class="save-share-container">
@@ -228,44 +225,17 @@ function loadData() {
 }
 
 .line {
-  width: 100vw;
+  width: 150vw;
   top: 204px;
   height: 2px;
   background-color: black;
-  position: absolute;
-  left: -3px;
-}
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 32px; 
-    line-height: 40px;
-    top: 20px; 
-  }
-
-  .title2 {
-    font-size: 32px; 
-    line-height: 40px;
-    top: 100px; 
-  }
-
-  .line {
-    top: 204px; 
-  }
-
-  .name {
-    font-size: 48px; 
-    top: 200px; 
-  }
-
-  .content-container {
-    margin-top: 20px; 
-  }
+  position: relative;
+  left: -100px;
 }
 
 .name {
   font-family: 'San Francisco', sans-serif;
-  position: absolute;
+  text-align: center;
   width: 163px;
   height: 76px;
   left: 115px;
