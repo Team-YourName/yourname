@@ -144,7 +144,7 @@ const shareContent = () => {
       .share({
         title: 'Your Name Result',
         text: 'Check out my result from Your Name!',
-        url: window.location.href, // 현재 페이지 URL
+        url: window.location.href,
       })
       .then(() => console.log('공유 성공'))
       .catch((error) => console.error('공유 중 오류 발생:', error));
@@ -203,15 +203,12 @@ function loadData() {
   height: 96px;
   left: 10px;
   top: 30px;
-
-  font-family: 'San Francisco', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
   line-height: 48px;
   display: flex;
   align-items: center;
-
   color: #B4B4B4;
 }
 .title2 {
@@ -221,15 +218,12 @@ function loadData() {
   height: 48px;
   left: 10px;
   top: 136px;
-
-  font-family: 'San Francisco', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
   line-height: 48px;
   display: flex;
   align-items: center;
-
   color: #252525;
 }
 
