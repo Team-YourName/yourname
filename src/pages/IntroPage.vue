@@ -1,6 +1,7 @@
 <template>
     <div>
-        <p class="intro-comment">Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p><p class="intro-comment">Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p>
+        <p class="intro-comment">
+            Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p>
         <div class="line"></div>
         <h1 class="title">So, <br> What's <br> Your <br> Name?</h1>
             <div class="text-container">
@@ -139,7 +140,7 @@ const goToDescription = () => {
   text-align: center;
 }
 .line {
-  width: 10000px;
+  width: 100vw;
   height: 2px;
   background-color: black;
   position: absolute;
@@ -149,7 +150,7 @@ const goToDescription = () => {
 
 .intro-comment {
     position: absolute;
-    width: 1252px;
+    width: 100vw;
     height: 38px;
     left: 5px;
     top: 42px;
@@ -161,6 +162,13 @@ const goToDescription = () => {
     line-height: 38px;
     letter-spacing: 0%;
     color: #252525;
+    white-space : nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+
+.intro-comment::-webkit-scrollbar{
+  display:none;
 }
 
 .title {
