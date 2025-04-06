@@ -236,7 +236,7 @@ function loadData() {
 .name {
   font-family: 'San Francisco', sans-serif;
   text-align: center;
-  width: 163px;
+  width: 100%;
   height: 76px;
   left: 115px;
   top: 234px;
