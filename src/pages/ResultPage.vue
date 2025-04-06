@@ -1,25 +1,23 @@
 <template>
+  <div id="app">
   <div> 
-    <div>
+    <div class="header-container">
       <h2 class="title">So, 
             <br>What’s your name?</h2>
             <p class="title2">I am...</p>
+            <div class="line"></div>      
     </div>
   </div>
 
     <div class="container">
-        <div class="line"></div>      
-        <div>
-            <h1 class="name">{{ firstRecommendedName }}</h1>
             <div class="content-container">
+            <h1 class="name">{{ firstRecommendedName }}</h1>
                 <p class="content mb-4">{{ firstRecommendedName }}은 {{ firstRecommendedMean }}는 뜻의 
                 이름이예요. {{ trendDescription }} 이름으로, 당신의 {{ mbtiDescription }} 성격과 매우 잘 어울리네요! 
                 선택하신 {{ hashtagDescription }} 느낌들을 반영해보았어요!</p>
             </div>
-            
             <p class="other-names mb-2">또 다른 이름이 궁금하신가요?</p>
             <a href="#" class="link-button" @click.prevent="goToIntro">또 다른 이름 보기</a>
-        </div>
 
         <div class="button-container">
             <div class="save-share-container">
@@ -143,7 +141,7 @@ const shareContent = () => {
       .share({
         title: 'Your Name Result',
         text: 'Check out my result from Your Name!',
-        url: window.location.href, // 현재 페이지 URL
+        url: window.location.href,
       })
       .then(() => console.log('공유 성공'))
       .catch((error) => console.error('공유 중 오류 발생:', error));
@@ -190,6 +188,11 @@ function loadData() {
   margin-top: 288px;
 }
 
+.header-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .title {
   font-family: 'San Francisco', sans-serif;
   position: absolute;
@@ -197,15 +200,12 @@ function loadData() {
   height: 96px;
   left: 10px;
   top: 30px;
-
-  font-family: 'San Francisco', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
   line-height: 48px;
   display: flex;
   align-items: center;
-
   color: #B4B4B4;
 }
 .title2 {
@@ -215,29 +215,27 @@ function loadData() {
   height: 48px;
   left: 10px;
   top: 136px;
-
-  font-family: 'San Francisco', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
   line-height: 48px;
   display: flex;
   align-items: center;
-
   color: #252525;
 }
 
 .line {
-  width: 10000px;
+  width: 150vw;
   top: 204px;
   height: 2px;
   background-color: black;
-  position: absolute;
-  left: -3px;
+  position: relative;
+  left: -100px;
 }
+
 .name {
   font-family: 'San Francisco', sans-serif;
-  position: absolute;
+  text-align: center;
   width: 163px;
   height: 76px;
   left: 115px;

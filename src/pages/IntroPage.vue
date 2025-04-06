@@ -1,6 +1,7 @@
 <template>
     <div>
-        <p class="intro-comment">Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p><p class="intro-comment">Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p>
+        <p class="intro-comment">
+            Hi, I’m Alex. Nice to meet you! What’s your name? Oh, hey Alex! I’m Taylor. Nice to meet you too.</p>
         <div class="line"></div>
         <h1 class="title">So, <br> What's <br> Your <br> Name?</h1>
             <div class="text-container">
@@ -9,7 +10,7 @@
             </div>
 
         <div class="container">
-            <div class="name-circle !w-60 !max-w-[150px] !ml-[-3px]">
+            <div class="name-circle !w-60 !top-[553px] !max-w-[150px] !ml-[-3px]">
                 <p class="name relative">Dustin
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -17,7 +18,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[158px]">
+            <div class="name-circle !w-40 !top-[553px] !max-w-[130px] !ml-[158px]">
                 <p class="name relative">Bella 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -25,7 +26,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[300px]">
+            <div class="name-circle !w-40 !top-[553px] !max-w-[130px] !ml-[300px]">
                 <p class="name">David 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -139,7 +140,7 @@ const goToDescription = () => {
   text-align: center;
 }
 .line {
-  width: 10000px;
+  width: 100vw;
   height: 2px;
   background-color: black;
   position: absolute;
@@ -149,7 +150,7 @@ const goToDescription = () => {
 
 .intro-comment {
     position: absolute;
-    width: 1252px;
+    width: 100vw;
     height: 38px;
     left: 5px;
     top: 42px;
@@ -161,6 +162,13 @@ const goToDescription = () => {
     line-height: 38px;
     letter-spacing: 0%;
     color: #252525;
+    white-space : nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+}
+
+.intro-comment::-webkit-scrollbar{
+  display:none;
 }
 
 .title {

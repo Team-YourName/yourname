@@ -9,8 +9,8 @@
             <br>최적의 이름을 찾아볼까요?</p>
         
         
-            <div class="container">
-            <div class="name-circle !w-60 !max-w-[150px] !ml-[-3px]">
+            <div class="second-container">
+            <div class="name-circle !w-60 !top-[553px] !max-w-[150px] !ml-[-3px]">
                 <p class="name relative">Dustin
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -18,7 +18,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[158px]">
+            <div class="name-circle !w-40 !top-[553px] !max-w-[130px] !ml-[158px]">
                 <p class="name relative">Bella 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -26,7 +26,7 @@
                 </p>
             </div>
 
-            <div class="name-circle !w-40 !max-w-[130px] !ml-[300px]">
+            <div class="name-circle !w-40 !top-[553px] !max-w-[130px] !ml-[300px]">
                 <p class="name">David 
                     <svg xmlns="http://www.w3.org/2000/svg" class="delete_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

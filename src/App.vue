@@ -1,14 +1,3 @@
-<script setup>
-import { RouterView, useRoute } from 'vue-router';
-import { watch } from 'vue';
-
-const route = useRoute();
-watch(
-  () => route.name,
-  { immediate: true }
-);
-</script>
-
 <template>
   <div>
     <RouterView />
@@ -16,21 +5,23 @@ watch(
 </template>
 
 <style scoped>
+html, body {
+  width: 393px; 
+  height: 852px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden; 
+}
+
 #app {
   width: 393px;
   height: 852px;
   position: absolute;
-  top: 1286px;
-  left: -596px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* header, main, footer {
-  padding: 20px;
-  text-align: center;
-} */
 
 @media (max-width: 600px) {
   #app {
