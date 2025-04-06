@@ -14,12 +14,12 @@
         @click="selectType('trendy')" >트렌디한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedType === 'unique' }"
-        @click="selectType('unique')">독특한
+        :class="{ selected: selectedType === 'rare' }"
+        @click="selectType('rare')">독특한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedType === 'neutral' }"
-        @click="selectType('neutral')">무난한
+        :class="{ selected: selectedType === 'alltime' }"
+        @click="selectType('alltime')">무난한
       </button>
     </div>
 
@@ -69,10 +69,10 @@ const selectType = (type) => {
   } else if (type === 'trendy') {
     typeMessage1.value = '최근 유행하는 인기이름을 찾고 계시는군요,';
     typeMessage2.value = '저희가 찾아드릴게요.';
-  } else if (type === 'unique') {
+  } else if (type === 'rare') {
     typeMessage1.value = '흔하지 않은 특별한 이름을 찾고 계신가요?';
     typeMessage2.value = '저희가 찾아볼게요.';
-  } else if (type === 'neutral') {
+  } else if (type === 'alltime') {
     typeMessage1.value = '시대상관없이 늘 인기있던 무난한 이름은';
     typeMessage2.value = '누구에게나 잘 어울릴거예요.';
   }
