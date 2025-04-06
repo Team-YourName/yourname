@@ -1,6 +1,7 @@
 <template>
+  <div id="app">
   <div> 
-    <div>
+    <div class="header-container">
       <h2 class="title">So, 
             <br>What’s your name?</h2>
             <p class="title2">I am...</p>
@@ -190,6 +191,11 @@ function loadData() {
   margin-top: 288px;
 }
 
+.header-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .title {
   font-family: 'San Francisco', sans-serif;
   position: absolute;
@@ -228,13 +234,41 @@ function loadData() {
 }
 
 .line {
-  width: 10000px;
+  width: 100vw;
   top: 204px;
   height: 2px;
   background-color: black;
   position: absolute;
   left: -3px;
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 32px; 
+    line-height: 40px;
+    top: 20px; 
+  }
+
+  .title2 {
+    font-size: 32px; 
+    line-height: 40px;
+    top: 100px; 
+  }
+
+  .line {
+    top: 204px; 
+  }
+
+  .name {
+    font-size: 48px; 
+    top: 200px; 
+  }
+
+  .content-container {
+    margin-top: 20px; 
+  }
+}
+
 .name {
   font-family: 'San Francisco', sans-serif;
   position: absolute;
