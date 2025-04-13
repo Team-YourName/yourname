@@ -289,7 +289,7 @@ body {
 }
 
 .next-button:hover {
-  background-color: #d1d5db; 
+  background-color: #252525; 
 }
 
 .go-back-to-start-button {

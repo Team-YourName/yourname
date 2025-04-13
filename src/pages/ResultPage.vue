@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-  <div> 
+  <div class="capture"> 
     <div class="header-container">
       <h2 class="title">So, 
             <br>What’s your name?</h2>
             <p class="title2">I am...</p>
             <div class="line"></div>      
     </div>
-  </div>
 
     <div class="container">
             <div class="content-container">
@@ -27,20 +26,6 @@
             <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
         </div>
     </div>
-
-    <div v-show="isGeneratingImage" id="capture">
-    <h2 class="title">So, 
-        <br>What’s your name?</h2>
-        <p class="title2">I am...</p>
-      <div class="container">
-        <div class="line"></div>
-        <h1 class="name mt-3" style="margin-top: 76px;">Colin</h1>
-        <div class="content-container" style="margin-top: 380px;">
-          <p class="content">
-            Colin 은 강하고 씩씩하다는 뜻의 이름이예요. 호불호없이 무난한 이름으로, 당신의 독립적인 성격과 매우 잘 어울리네요! 선택하신 #도전적인 #밝은 #멋진 느낌들을 반영해보았어요!
-          </p>
-        </div>
-      </div>
   </div>
 </div>
 </template>
@@ -109,31 +94,57 @@ const goToIntro = () => {
   router.push('/'); 
 };
 
+const hideElements = () => {
+  document.querySelector('.container').style.marginTop = '388px';
+  document.querySelector('.other-names').style.display = 'none';
+  document.querySelector('.link-button').style.display = 'none';
+  document.querySelector('.save-button').style.display = 'none';
+  document.querySelector('.share-button').style.display = 'none';
+  document.querySelector('.go-back-to-start-button').style.display = 'none';
+};
+
+const restoreElements = () => {
+  document.querySelector('.container').style.marginTop = '288px';
+  document.querySelector('.other-names').style.display = '';
+  document.querySelector('.link-button').style.display = '';
+  document.querySelector('.save-button').style.display = '';
+  document.querySelector('.share-button').style.display = '';
+  document.querySelector('.go-back-to-start-button').style.display = '';
+};
+
 const downloadImage = () => {
   isGeneratingImage.value = true;
 
-  document.fonts.ready.then(() => {
-    nextTick(() => {
-      const element = document.getElementById('capture');
+  nextTick(() => {
+    document.fonts.ready.then(() => {
+      const element = document.querySelector('.capture');
 
-    html2canvas(element, {
-      scale: 2,
-    })
-      .then((canvas) => {
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/png');
-        link.download = 'yourname-result.png';
-        link.click();
+      hideElements();
+
+      html2canvas(element, {
+        scale: 2,
+        useCORS: true,
+        width: window.innerWidth,
+        height: window.innerHeight,
       })
-      .catch((error) => {
-        console.error('이미지 저장 중 오류 발생:', error);
-      })
-      .finally(() => {
-        isGeneratingImage.value = false;
-      });
+        .then((canvas) => {
+          const link = document.createElement('a');
+          link.href = canvas.toDataURL('image/png');
+          link.download = 'yourname-result.png';
+          link.click();
+        })
+        .catch((error) => {
+          console.error('이미지 저장 중 오류 발생:', error);
+        })
+        .finally(() => {
+          isGeneratingImage.value = false;
+          restoreElements();
+        });
+    });
   });
-});
 };
+
+
 
 const shareContent = () => {
   if (navigator.share) {
@@ -168,18 +179,6 @@ function loadData() {
 
 <style scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css); 
-
-#capture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 393px;
-  height: 852px;
-  background-color: white;
-  padding: 20px;
-  margin: 0 auto;
-  z-index: -1;
-}
 
 .container {
   max-width: 400px;
