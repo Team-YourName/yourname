@@ -145,9 +145,11 @@
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { calculateScore } from '@/utils/NameScoreCalculator';
+import { useNameStore } from '@/stores/NameStore'; 
 
 const route = useRoute();
 const router = useRouter();
+const nameStore = useNameStore();
 
 const gender = route.query.gender;
 const trend = route.query.type;
@@ -157,10 +159,12 @@ const mbti = route.query.mbti;
 const calculateAndNavigate = async () => {
   const recommendedNames = calculateScore(gender, trend, meanings, mbti);
 
-  localStorage.setItem('recommendedNames', JSON.stringify(recommendedNames));
-  localStorage.setItem('mbti', mbti);
-  localStorage.setItem('trend', trend);
-  localStorage.setItem('meanings', JSON.stringify(meanings));
+  nameStore.setRecommendations({
+    recommendedNames,
+    mbti,
+    trend,
+    meanings,
+  });
 
   router.push({
     name: 'ResultPage'
