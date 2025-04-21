@@ -37,7 +37,9 @@ export const meaningTags = {
     '도전적인' : { 
         [keywords.CHALLENGING] : 60,
         [keywords.BRAVE]: 50, 
-        [keywords.CREATIVE]: 40 
+        [keywords.CREATIVE]: 40,
+        [keywords.COURAGEOUS]: 30,
+        [keywords.ENERGETIC]: 20 
     },
     '우아한' : { 
         [keywords.ELEGANT] : 60,
@@ -59,6 +61,7 @@ export const meaningTags = {
     '용감한' : {
         [keywords.BRAVE]: 60,
         [keywords.MASCULINE]: 50,
+        [keywords.COURAGEOUS]: 40
     }, 
     '매력적인' : {
         [keywords.ATTRACTIVE]: 60,
@@ -80,6 +83,7 @@ export const meaningTags = {
         [keywords.BRIGHT]: 60,
         [keywords.CHEERFUL]: 50,
         [keywords.CUTE]: 40,
+        [keywords.ENERGETIC]: 30 
     }, 
     '진실된' : {
         [keywords.TRUTHFUL]: 60,
@@ -98,7 +102,8 @@ export const meaningTags = {
         [keywords.STRONG]: 60,
         [keywords.BRAVE]: 50, 
         [keywords.INTELLIGENT]: 40, 
-        [keywords.MASCULINE]: 30 
+        [keywords.MASCULINE]: 30,
+        [keywords.COURAGEOUS]: 20
     }, 
     '똑똑한' : {
         [keywords.INTELLIGENT]: 60,
@@ -125,56 +130,80 @@ export const mbtiTags = {
     'ISFP' : {
         [keywords.ELEGANT]: 30,
         [keywords.NATURAL]: 30,
+        [keywords.CUTE]: 30
     },
     'INFP' : {
         [keywords.CREATIVE]: 30,
+        [keywords.BEAUTIFUL]: 30,
+        [keywords.PEACEFUL]: 30
     },
     'ISTJ' : {
         [keywords.TRUTHFUL]: 30,
         [keywords.STRONG]: 30,
+        [keywords.MASCULINE]: 30,
+        [keywords.TRADITIONAL]: 30
     },
     'INTJ' : {
         [keywords.DIGNIFIED]: 30,
         [keywords.INTELLIGENT]: 30,
+        [keywords.MATURE]: 30,
     },
     'ISFJ' : {
         [keywords.WARM]: 30,
+        [keywords.KIND]: 30,
+        [keywords.RELIGIOUS]: 30,
     },
     'INFJ' : {
         [keywords.ELEGANT]: 30,
         [keywords.DIGNIFIED]: 30,
         [keywords.TRUTHFUL]: 30,
+        [keywords.KIND]: 30,
+        [keywords.MYSTERIOUS]: 30
     },
     'ESTP' : {
         [keywords.CHALLENGING]: 30,
         [keywords.STYLISH]: 30,  
+        [keywords.ENERGETIC]: 30
     },
     'ENTP' : {
         [keywords.CHALLENGING]: 30,
         [keywords.INTELLIGENT]: 30,
+        [keywords.ROYAL]: 30,
     },
     'ESFP' : {
         [keywords.ATTRACTIVE]: 30,
         [keywords.BRIGHT]: 30,
         [keywords.NATURAL]: 30,
         [keywords.HAPPY]: 30,
+        [keywords.CHEERFUL]: 30
     },
     'ENFP' : {
         [keywords.CREATIVE]: 30,
         [keywords.BRIGHT]: 30,
         [keywords.HAPPY]: 30,
+        [keywords.ENERGETIC]: 30,
+        [keywords.LUCKY]: 30
     },
     'ESTJ' : {
         [keywords.STRONG]: 30,
+        [keywords.LUCKY]: 30,
+        [keywords.MASCULINE]: 30,
+        [keywords.WEALTHY]: 30
     },
     'ENTJ' : {
         [keywords.BRAVE]: 30,
+        [keywords.BEST]: 30,
+        [keywords.ROYAL]: 30,
     },
     'ESFJ' : {
         [keywords.WARM]: 30,
+        [keywords.KIND]: 30
     },
     'ENFJ' : {
         [keywords.ATTRACTIVE]: 30,
+        [keywords.COURAGEOUS]: 30,
+        [keywords.KIND]: 30,
+        [keywords.MYSTERIOUS]: 30
     },
 }
 

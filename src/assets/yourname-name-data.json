@@ -325,7 +325,7 @@
     "name": "Benjamin",
     "gender": "M",
     "mean": "행운아",
-    "category": ["HAPPY", "MASCULINE"],
+    "category": ["LUCKY", "HAPPY", "MASCULINE"],
     "trend": "ALLTIME"
   },
   {
@@ -465,7 +465,7 @@
     "name": "Bright",
     "gender": "F",
     "mean": "빛나는, 생기있는",
-    "category": ["BEST", "NATURAL"],
+    "category": ["BEST", "NATURAL", "ENERGETIC"],
     "trend": "RARE"
   },
   {
@@ -640,14 +640,14 @@
     "name": "Cookie",
     "gender": "F",
     "mean": "매력적인, 귀여운 소녀",
-    "category": ["CUTE", "BEAUTIFUL"],
+    "category": ["CUTE", "BEAUTIFUL", "ATTRACTIVE"],
     "trend": "RARE"
   },
   {
     "name": "Cooper",
     "gender": "M",
-    "mean": "통 제작자",
-    "category": ["INTELLIGENT"],
+    "mean": "통제자",
+    "category": ["INTELLIGENT", "STRONG"],
     "trend": "TREDY"
   },
   {
@@ -773,7 +773,7 @@
     "name": "Delling",
     "gender": "F",
     "mean": "불꽃을 튀기다",
-    "category": ["BRAVE", "MASCULINE"],
+    "category": ["BRAVE", "MASCULINE", "ENERGETIC"],
     "trend": "RARE"
   },
   {
@@ -815,7 +815,7 @@
     "name": "Easton",
     "gender": "M",
     "mean": "동쪽 마을, 새로운 시작, 희망, 발전",
-    "category": ["CREATIVE", "ROYAL"],
+    "category": ["CREATIVE", "ROYAL", "ENERGETIC"],
     "trend": "TREDY"
   },
   {
@@ -864,14 +864,14 @@
     "name": "Ella",
     "gender": "F",
     "mean": "활기찬, 밝은 빛",
-    "category": ["CHEERFUL", "BEST"],
+    "category": ["CHEERFUL", "BEST", "ENERGETIC"],
     "trend": "TREDY"
   },
   {
     "name": "Ellen",
     "gender": "F",
     "mean": "희망적이고 행복한",
-    "category": ["CHEERFUL", "LUCKY"],
+    "category": ["CHEERFUL", "LUCKY", "HAPPY"],
     "trend": "CLASSIC"
   },
   {
@@ -990,14 +990,14 @@
     "name": "Felicia",
     "gender": "F",
     "mean": "행복한",
-    "category": ["LUCKY", "INTELLIGENT"],
+    "category": ["LUCKY", "INTELLIGENT", "HAPPY"],
     "trend": "CLASSIC"
   },
   {
     "name": "Felix",
     "gender": "M",
     "mean": "행운, 행복",
-    "category": ["LUCKY", "INTELLIGENT"],
+    "category": ["LUCKY", "INTELLIGENT", "HAPPY"],
     "trend": "ALLTIME"
   },
   {
@@ -1088,147 +1088,147 @@
     "name": "Gloria",
     "gender": "F",
     "mean": "영광을 주는 사람",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "DIGNIFIED"],
     "trend": "CLASSIC"
   },
   {
     "name": "Grace",
     "gender": "F",
     "mean": "우아한, 신의 은혜",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "ELEGANT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Grania",
     "gender": "F",
-    "mean": "곡식의 여신",
-    "category": ["NATURAL"],
+    "mean": "사랑받는 사람",
+    "category": ["ATTRACTIVE", "STRONG"],
     "trend": "RARE"
   },
   {
     "name": "Grant",
     "gender": "M",
     "mean": "훌륭하다, 키가 크다",
-    "category": ["BEST"],
+    "category": ["BEST", "TRADITIONAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Grayson",
     "gender": "M",
-    "mean": "회색 머리의 아들",
-    "category": ["MYSTERIOUS"],
+    "mean": "회색의 아들",
+    "category": ["NATURAL", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Haley",
     "gender": "F",
     "mean": "영웅",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "CHALLENGING"],
     "trend": "CLASSIC"
   },
   {
     "name": "Hannah",
     "gender": "F",
     "mean": "우아한",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "ELEGANT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Harmony",
     "gender": "F",
     "mean": "아름다운 조화",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "PEACEFUL"],
     "trend": "TREDY"
   },
   {
     "name": "Harper",
     "gender": "F",
     "mean": "하프 연주자, 선율의 아름다움",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "CREATIVE"],
     "trend": "TREDY"
   },
   {
     "name": "Harrison",
     "gender": "M",
     "mean": "해리의 아들",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "CHALLENGING"],
     "trend": "TREDY"
   },
   {
     "name": "Heather",
     "gender": "F",
     "mean": "꽃이 피는",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "PEACEFUL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Helen",
     "gender": "F",
     "mean": "횃불",
-    "category": ["BEST"],
+    "category": ["BEST", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Henry",
     "gender": "M",
     "mean": "집의 통치자",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Hera",
     "gender": "F",
     "mean": "하늘의 여왕",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "ROYAL"],
     "trend": "RARE"
   },
   {
     "name": "Hestia",
     "gender": "F",
     "mean": "가정의 여신",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Hilda",
     "gender": "F",
     "mean": "여전사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "RARE"
   },
   {
     "name": "Honey",
     "gender": "F",
     "mean": "멋진, 벌꿀",
-    "category": ["BEST"],
+    "category": ["BEST", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Hudson",
     "gender": "M",
     "mean": "휴드의 아들, 가족과 유산에 대한 존경",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "TRADITIONAL"],
     "trend": "TREDY"
   },
   {
     "name": "Hunter",
     "gender": "M",
     "mean": "사냥꾼",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "MASCULINE"],
     "trend": "TREDY"
   },
   {
     "name": "Ian",
     "gender": "F",
-    "mean": "하나님의 선물",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 선물",
+    "category": ["RELIGIOUS", "INTELLIGENT"],
     "trend": "RARE"
   },
   {
     "name": "Ian",
     "gender": "M",
-    "mean": "하나님은 은혜로우시다",
-    "category": ["RELIGIOUS"],
+    "mean": "신은 은혜로우시다",
+    "category": ["RELIGIOUS", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
@@ -1242,532 +1242,532 @@
     "name": "Iliana",
     "gender": "F",
     "mean": "밝은",
-    "category": ["CHEERFUL"],
+    "category": ["CHEERFUL", "BRIGHT"],
     "trend": "RARE"
   },
   {
     "name": "Indira",
     "gender": "F",
     "mean": "천둥 번개의 신",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "STRONG"],
     "trend": "RARE"
   },
   {
     "name": "Ingrid",
     "gender": "F",
     "mean": "딸, 귀여운 사람, 목초지",
-    "category": ["CUTE"],
+    "category": ["CUTE", "BEAUTIFUL"],
     "trend": "RARE"
   },
   {
     "name": "Irene",
     "gender": "F",
     "mean": "평화, 평화의 여신",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "ELEGANT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Iris",
     "gender": "F",
     "mean": "무지개의 여신",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "ALLTIME"
   },
   {
     "name": "Isaac",
     "gender": "M",
-    "mean": "그가 웃을 것이다",
-    "category": ["CHEERFUL"],
+    "mean": "웃음의 기쁨",
+    "category": ["CHEERFUL", "HAPPY"],
     "trend": "ALLTIME"
   },
   {
     "name": "Isabel",
     "gender": "F",
-    "mean": "하나님의 사랑",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 사랑",
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Isabell",
     "gender": "F",
-    "mean": "하나님의 서약",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 서약",
+    "category": ["RELIGIOUS", "TRUTHFUL"],
     "trend": "RARE"
   },
   {
     "name": "Isadora",
     "gender": "F",
     "mean": "선물",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Isaiah",
     "gender": "M",
-    "mean": "야훼는 구원이시다",
-    "category": ["RELIGIOUS"],
+    "mean": "구원, 신의 축복",
+    "category": ["RELIGIOUS", "TRUTHFUL"],
     "trend": "TREDY"
   },
   {
     "name": "Isis",
     "gender": "F",
     "mean": "가장 강력한 이집트 여신",
-    "category": ["BEST"],
+    "category": ["BEST", "STRONG", "DIGNIFIED"],
     "trend": "RARE"
   },
   {
     "name": "Ivan",
     "gender": "M",
-    "mean": "하나님은 은혜로우시다",
-    "category": ["RELIGIOUS"],
+    "mean": "신은 은혜로우시다",
+    "category": ["RELIGIOUS", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Ivy",
     "gender": "F",
     "mean": "신성한",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "MYSTERIOUS"],
     "trend": "TREDY"
   },
   {
     "name": "Jace",
     "gender": "F",
-    "mean": "매력적인",
-    "category": ["ATTRACTIVE"],
+    "mean": "치유자",
+    "category": ["ATTRACTIVE", "MASCULINE"],
     "trend": "RARE"
   },
   {
     "name": "Jack",
     "gender": "M",
-    "mean": "하나님은 은혜로우시다",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 은혜",
+    "category": ["RELIGIOUS", "TRADITIONAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Jackson",
     "gender": "M",
-    "mean": "잭의 아들 또는 존의 아들",
-    "category": ["MASCULINE"],
+    "mean": "잭의 아들 또는 신의 은혜",
+    "category": ["MASCULINE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Jacob",
     "gender": "M",
     "mean": "대체자 또는 발꿈치를 잡는 자",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "INTELLIGENT", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Jane",
     "gender": "F",
     "mean": "고귀하고 선한",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "KIND"],
     "trend": "CLASSIC"
   },
   {
     "name": "Janet",
     "gender": "F",
     "mean": "소녀, 신의 은총",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "TRADITIONAL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Jannet",
     "gender": "F",
     "mean": "소녀, 신의 은총",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Jasmin",
     "gender": "F",
     "mean": "상냥한 여자",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "KIND"],
     "trend": "RARE"
   },
   {
     "name": "Jaxon",
     "gender": "M",
-    "mean": "잭의 아들",
-    "category": ["MASCULINE"],
+    "mean": "신의 은혜",
+    "category": ["MASCULINE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Jayden",
     "gender": "M",
-    "mean": "감사하는 자",
-    "category": ["PEACEFUL"],
+    "mean": "감사의 마음",
+    "category": ["PEACEFUL", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Jennifer",
     "gender": "F",
     "mean": "매혹적인 여자, 흰 파도, 요정",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "ATTRACTIVE"],
     "trend": "CLASSIC"
   },
   {
     "name": "Jenny",
     "gender": "F",
     "mean": "매혹적인",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "ATTRACTIVE"],
     "trend": "CLASSIC"
   },
   {
     "name": "Jeremy",
     "gender": "M",
-    "mean": "하나님이 높이신다",
-    "category": ["RELIGIOUS"],
+    "mean": "신이 높이신다",
+    "category": ["RELIGIOUS", "ROYAL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Jesse",
     "gender": "M",
     "mean": "선물",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "TRADITIONAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Jessica",
     "gender": "F",
-    "mean": "부유한 사람",
-    "category": ["WEALTHY"],
+    "mean": "신이 보살피는 사람",
+    "category": ["WEALTHY", "TRADITIONAL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Joanna",
     "gender": "F",
     "mean": "신의 선물",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WEALTHY"],
     "trend": "CLASSIC"
   },
   {
     "name": "Joel",
     "gender": "M",
-    "mean": "야훼는 하나님이시다",
-    "category": ["RELIGIOUS"],
+    "mean": "회개와 구원",
+    "category": ["RELIGIOUS", "TRUTHFUL"],
     "trend": "ALLTIME"
   },
   {
     "name": "John",
     "gender": "M",
-    "mean": "하나님은 은혜로우시다",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 은혜",
+    "category": ["RELIGIOUS", "MATURE"],
     "trend": "ALLTIME"
   },
   {
     "name": "Joseph",
     "gender": "M",
-    "mean": "그가 더할 수도 있다 또는 하나님이 증가하실 것이다",
-    "category": ["RELIGIOUS"],
+    "mean": "신이 더하신다",
+    "category": ["RELIGIOUS", "ROYAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Josiah",
     "gender": "M",
-    "mean": "하나님이 지원하신다",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 구원",
+    "category": ["RELIGIOUS", "TRUTHFUL"],
     "trend": "TREDY"
   },
   {
     "name": "Joy",
     "gender": "F",
     "mean": "기쁨",
-    "category": ["CHEERFUL"],
+    "category": ["CHEERFUL", "HAPPY"],
     "trend": "CLASSIC"
   },
   {
     "name": "Juana",
     "gender": "F",
     "mean": "신의 이득",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "LUCKY"],
     "trend": "RARE"
   },
   {
     "name": "Julia",
     "gender": "F",
-    "mean": "젊음, 부드러운 머리결",
-    "category": ["BEAUTIFUL"],
+    "mean": "고귀하고 지적인",
+    "category": ["ROYAL", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Julian",
     "gender": "M",
-    "mean": "젊음 또는 마음이 젊다",
-    "category": ["BEAUTIFUL"],
+    "mean": "고귀하고 자유로운 사람",
+    "category": ["ROYAL", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Juniper",
     "gender": "F",
     "mean": "향기로운",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "NATURAL"],
     "trend": "TREDY"
   },
   {
     "name": "Justin",
     "gender": "M",
     "mean": "정직한 또는 똑바른",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Kaiden",
     "gender": "M",
     "mean": "전사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Kaleb",
     "gender": "M",
     "mean": "충실한",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "STRONG", "BRAVE"],
     "trend": "TREDY"
   },
   {
     "name": "Kama",
     "gender": "F",
     "mean": "사랑의 신",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Kara",
     "gender": "F",
     "mean": "달콤한 멜로디",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "CHEERFUL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Karen",
     "gender": "F",
     "mean": "순결하다",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Karena",
     "gender": "F",
     "mean": "순수",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "RARE"
   },
   {
     "name": "Kate",
     "gender": "F",
     "mean": "순수한",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Katherine",
     "gender": "F",
     "mean": "순결한 사람",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Kathryn",
     "gender": "F",
     "mean": "순결한",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Katie",
     "gender": "F",
     "mean": "순결한",
-    "category": ["TRUTHFUL"],
+    "category": ["TRUTHFUL", "ELEGANT", "BRIGHT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Katrina",
     "gender": "F",
     "mean": "공부를 잘 하는 사람",
-    "category": ["INTELLIGENT"],
+    "category": ["INTELLIGENT", "MATURE"],
     "trend": "CLASSIC"
   },
   {
     "name": "Kayla",
     "gender": "F",
     "mean": "기쁜",
-    "category": ["CHEERFUL"],
+    "category": ["CHEERFUL", "HAPPY"],
     "trend": "RARE"
   },
   {
     "name": "Kelly",
     "gender": "F",
     "mean": "리더십과 성취",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "MATURE"],
     "trend": "CLASSIC"
   },
   {
     "name": "Kim",
     "gender": "F",
     "mean": "지배자",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "DIGNIFIED"],
     "trend": "CLASSIC"
   },
   {
     "name": "Kingston",
     "gender": "M",
     "mean": "왕의 마을",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Kira",
     "gender": "F",
     "mean": "태양",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "BEST"],
     "trend": "RARE"
   },
   {
     "name": "Kyra",
     "gender": "F",
     "mean": "품위 있는",
-    "category": ["DIGNIFIED"],
+    "category": ["DIGNIFIED", "ROYAL"],
     "trend": "RARE"
   },
   {
     "name": "Lacie",
     "gender": "F",
     "mean": "쾌활한",
-    "category": ["CHEERFUL"],
+    "category": ["CHEERFUL", "BRIGHT"],
     "trend": "RARE"
   },
   {
     "name": "Lara",
     "gender": "F",
     "mean": "빛나는",
-    "category": ["CHEERFUL"],
+    "category": ["CHEERFUL", "BRIGHT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Laura",
     "gender": "F",
     "mean": "월계수, 승리",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "BEAUTIFUL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Lauren",
     "gender": "F",
-    "mean": "예술적인",
-    "category": ["BEAUTIFUL"],
+    "mean": "영광받은 자",
+    "category": ["STYLISH", "BEAUTIFUL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Lavina",
     "gender": "F",
-    "mean": "라틴어로 로마의 여인",
-    "category": ["BEAUTIFUL"],
+    "mean": "고귀함, 순수함",
+    "category": ["BEAUTIFUL", "ROYAL"],
     "trend": "RARE"
   },
   {
     "name": "Lawrence",
     "gender": "F",
     "mean": "월계관을 쓴, 뛰어난 전사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "BEST"],
     "trend": "RARE"
   },
   {
     "name": "Leo",
     "gender": "M",
     "mean": "사자",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Leonardo",
     "gender": "M",
-    "mean": "사자 같은 강한 사람",
-    "category": ["ROYAL"],
+    "mean": "사자의 힘을 가진 자",
+    "category": ["ROYAL", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Lesley",
     "gender": "F",
-    "mean": "과수원",
-    "category": ["NATURAL"],
+    "mean": "정원",
+    "category": ["NATURAL", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Levi",
     "gender": "M",
-    "mean": "결합하다 또는 붙다",
-    "category": [],
+    "mean": "함께하는, 연결된",
+    "category": ["ROYAL", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Liam",
     "gender": "M",
     "mean": "강력한 의지의 전사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Lilly",
     "gender": "F",
     "mean": "백합",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Lincoln",
     "gender": "M",
-    "mean": "호수 마을",
-    "category": ["NATURAL"],
+    "mean": "정의, 인내",
+    "category": ["TRUTHFUL", "INTELLIGENT"],
     "trend": "TREDY"
   },
   {
     "name": "Linda",
     "gender": "F",
-    "mean": "아름다움/사랑/우정",
-    "category": ["BEAUTIFUL"],
+    "mean": "아름다움, 사랑, 우정",
+    "category": ["BEAUTIFUL", "HAPPY"],
     "trend": "CLASSIC"
   },
   {
     "name": "Lindsay",
     "gender": "F",
-    "mean": "자연과 도시",
-    "category": ["NATURAL"],
+    "mean": "호수 근처의 섬",
+    "category": ["NATURAL", "INTELLIGENT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Lisa",
     "gender": "F",
-    "mean": "하나님의 사랑",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 사랑",
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Logan",
     "gender": "M",
-    "mean": "작은 구멍",
-    "category": ["NATURAL"],
+    "mean": "작은 골짜기",
+    "category": ["NATURAL", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Lora",
     "gender": "F",
-    "mean": "신비로운",
-    "category": ["CREATIVE"],
+    "mean": "승리, 영광의 상징",
+    "category": ["ELEGANT", "INTELLIGENT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Lottie",
     "gender": "F",
-    "mean": "여자다운",
-    "category": ["BEAUTIFUL"],
+    "mean": "자유로운 사람",
+    "category": ["BEAUTIFUL", "CHEERFUL"],
     "trend": "RARE"
   },
   {
     "name": "Lowell",
     "gender": "M",
-    "mean": "프랑스어로 사랑받는",
-    "category": ["PEACEFUL"],
+    "mean": "작은 늑대",
+    "category": ["COURAGEOUS", "INTELLIGENT"],
     "trend": "RARE"
   },
   {
@@ -1809,252 +1809,252 @@
     "name": "Luna",
     "gender": "F",
     "mean": "달의 여신",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "BEAUTIFUL"],
     "trend": "TREDY"
   },
   {
     "name": "Maddox",
     "gender": "M",
     "mean": "행운의",
-    "category": ["LUCKY"],
+    "category": ["LUCKY", "HAPPY"],
     "trend": "TREDY"
   },
   {
     "name": "Madonna",
     "gender": "F",
-    "mean": "스페인어로 나의 소녀",
-    "category": ["CUTE"],
+    "mean": "나의 소녀",
+    "category": ["CUTE", "ROYAL"],
     "trend": "RARE"
   },
   {
     "name": "Mag",
     "gender": "F",
     "mean": "진주",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "WEALTHY"],
     "trend": "RARE"
   },
   {
     "name": "Maggie",
     "gender": "F",
-    "mean": "아름다움/사랑/우정",
-    "category": ["BEAUTIFUL"],
+    "mean": "아름다움, 사랑, 우정",
+    "category": ["BEAUTIFUL", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Makaio",
     "gender": "M",
-    "mean": "하와이어로 신의 선물",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 선물",
+    "category": ["RELIGIOUS","WARM"],
     "trend": "RARE"
   },
   {
     "name": "Makayla",
     "gender": "F",
     "mean": "신의 선물",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WEALTHY"],
     "trend": "RARE"
   },
   {
     "name": "Malissa",
     "gender": "F",
-    "mean": "매력이 철철 넘치는",
-    "category": ["BEAUTIFUL"],
+    "mean": "매력있는",
+    "category": ["BEAUTIFUL", "ATTRACTIVE"],
     "trend": "RARE"
   },
   {
     "name": "Malo",
     "gender": "M",
-    "mean": "하와이어로 승리자",
-    "category": ["BRAVE"],
+    "mean": "성스럽고 용감한 사람",
+    "category": ["BRAVE", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Mamie",
     "gender": "F",
     "mean": "바다의 여자",
-    "category": ["NATURAL"],
+    "category": ["CUTE", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Mana",
     "gender": "F",
-    "mean": "정신적인 선물",
-    "category": ["WEALTHY"],
+    "mean": "신성함, 생명력, 힘, 영혼",
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Mandelina",
     "gender": "F",
     "mean": "사랑스러운",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Mandy",
     "gender": "F",
     "mean": "사랑스러운",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "CUTE"],
     "trend": "CLASSIC"
   },
   {
     "name": "Marcia",
     "gender": "F",
     "mean": "전쟁의 여신",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "ELEGANT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Margaret",
     "gender": "F",
     "mean": "진주",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "WEALTHY"],
     "trend": "ALLTIME"
   },
   {
     "name": "Mark",
     "gender": "M",
-    "mean": "전쟁의 신 마르스에서 유래",
-    "category": ["RELIGIOUS"],
+    "mean": "전사, 강인한 자",
+    "category": ["RELIGIOUS", "STRONG"],
     "trend": "CLASSIC"
   },
   {
     "name": "Mason",
     "gender": "M",
     "mean": "돌을 만드는 일꾼",
-    "category": ["INTELLIGENT"],
+    "category": ["INTELLIGENT", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Matthew",
     "gender": "M",
-    "mean": "하나님의 선물",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 선물",
+    "category": ["RELIGIOUS", "WEALTHY"],
     "trend": "ALLTIME"
   },
   {
     "name": "Max",
     "gender": "M",
     "mean": "가장 위대한 또는 가장 뛰어난",
-    "category": ["BEST"],
+    "category": ["BEST", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Maxwell",
     "gender": "M",
-    "mean": "큰 샘",
-    "category": ["NATURAL"],
+    "mean": "위대한 샘",
+    "category": ["TRADITIONAL", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "May",
     "gender": "F",
-    "mean": "위대한",
-    "category": ["BEST"],
+    "mean": "봄, 희망",
+    "category": ["NATURAL", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Maya",
     "gender": "F",
     "mean": "꿈, 환상, 위대한",
-    "category": ["BEST"],
+    "category": ["BEST", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Melanie",
     "gender": "F",
-    "mean": "검은색",
-    "category": [],
+    "mean": "어둠의 사람",
+    "category": ["MYSTERIOUS", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Melody",
     "gender": "F",
-    "mean": "멋있고 트렌디한 이미지와 성숙한 분위기",
-    "category": ["MATURE"],
+    "mean": "노래, 선육",
+    "category": ["BEAUTIFUL", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Mia",
     "gender": "F",
     "mean": "나의 것",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Micah",
     "gender": "M",
     "mean": "누가 하나님과 같은가?",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Mikhaila",
     "gender": "F",
-    "mean": "예쁘장한",
-    "category": ["BEAUTIFUL"],
+    "mean": "신과 같은 자",
+    "category": ["BEAUTIFUL", "STRONG"],
     "trend": "RARE"
   },
   {
     "name": "Miles",
     "gender": "M",
-    "mean": "병사",
-    "category": ["BRAVE"],
+    "mean": "자비로운 병사",
+    "category": ["STRONG", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Moly",
     "gender": "F",
-    "mean": "별의 바다",
-    "category": ["NATURAL"],
+    "mean": "마법의",
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Morgan",
     "gender": "F",
-    "mean": "바다",
-    "category": ["NATURAL"],
+    "mean": "바다에서 온 사람",
+    "category": ["NATURAL", "STRONG"],
     "trend": "CLASSIC"
   },
   {
     "name": "Nadia",
     "gender": "F",
     "mean": "희망",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "ROYAL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Nathan",
     "gender": "M",
-    "mean": "하나님의 선물",
-    "category": ["RELIGIOUS"],
+    "mean": "신의 선물",
+    "category": ["RELIGIOUS", "TRADITIONAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Nathaniel",
     "gender": "M",
     "mean": "신의 선물",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "TRUTHFUL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Neila",
     "gender": "F",
-    "mean": "잠금",
-    "category": [],
+    "mean": "성취한 자",
+    "category": ["MATURE", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Nellie",
     "gender": "F",
     "mean": "밝고 빛나는 사람",
-    "category": ["BEST"],
+    "category": ["BEST", "BRIGHT"],
     "trend": "RARE"
   },
   {
     "name": "Nicolas",
     "gender": "M",
-    "mean": "인민의 승리자",
-    "category": ["BRAVE"],
+    "mean": "사람들의 승리",
+    "category": ["INTELLIGENT", "ELEGANT"],
     "trend": "ALLTIME"
   },
   {
@@ -2068,14 +2068,14 @@
     "name": "Noah",
     "gender": "M",
     "mean": "휴식 또는 위로",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "WARM"],
     "trend": "ALLTIME"
   },
   {
     "name": "Nolan",
     "gender": "M",
     "mean": "고귀한 또는 챔피언",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "ROYAL"],
     "trend": "TREDY"
   },
   {
@@ -2088,253 +2088,253 @@
   {
     "name": "Oliver",
     "gender": "M",
-    "mean": "올리브 나무",
-    "category": ["NATURAL"],
+    "mean": "평화의 사람",
+    "category": ["NATURAL", "PEACEFUL"],
     "trend": "TREDY"
   },
   {
     "name": "Owen",
     "gender": "M",
     "mean": "젊은 전사 또는 잘 태어난",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Paisley",
     "gender": "F",
-    "mean": "성당",
-    "category": ["RELIGIOUS"],
+    "mean": "교회의 들판",
+    "category": ["RELIGIOUS", "BRIGHT"],
     "trend": "TREDY"
   },
   {
     "name": "Pallas",
     "gender": "F",
     "mean": "지혜",
-    "category": ["INTELLIGENT"],
+    "category": ["INTELLIGENT", "COURAGEOUS"],
     "trend": "RARE"
   },
   {
     "name": "Pam",
     "gender": "F",
     "mean": "꿀처럼 달콤한 사람",
-    "category": ["CUTE"],
+    "category": ["CUTE", "WARM"],
     "trend": "RARE"
   },
   {
     "name": "Parker",
     "gender": "M",
-    "mean": "공원 관리인",
-    "category": ["INTELLIGENT"],
+    "mean": "공원지기",
+    "category": ["INTELLIGENT", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Patrick",
     "gender": "M",
     "mean": "귀족",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "ELEGANT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Paul",
     "gender": "M",
     "mean": "작은 또는 겸손한",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "INTELLIGENT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Penny",
     "gender": "F",
-    "mean": "직공, 오디세우스의 아내",
-    "category": ["BEAUTIFUL"],
+    "mean": "충실함, 지혜로움",
+    "category": ["INTELLIGENT", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Peter",
     "gender": "M",
     "mean": "바위 또는 돌",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "STRONG"],
     "trend": "ALLTIME"
   },
   {
     "name": "Poppy",
     "gender": "F",
     "mean": "양귀비 꽃",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Preston",
     "gender": "M",
     "mean": "성직자의 마을",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "TRADITIONAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Regina",
     "gender": "F",
-    "mean": "라틴어로 ‘여왕’",
-    "category": ["ROYAL"],
+    "mean": "여왕",
+    "category": ["ROYAL", "DIGNIFIED"],
     "trend": "CLASSIC"
   },
   {
     "name": "Richard",
     "gender": "M",
     "mean": "용감한 통치자 또는 강력한 통치자",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "BRAVE"],
     "trend": "ALLTIME"
   },
   {
     "name": "Rihanna",
     "gender": "F",
-    "mean": "달콤한 향미료",
-    "category": ["CUTE"],
+    "mean": "향기로운 바람",
+    "category": ["CUTE", "ELEGANT"],
     "trend": "RARE"
   },
   {
     "name": "Riona",
     "gender": "F",
     "mean": "여왕 같은, 우아한",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "ELEGANT"],
     "trend": "RARE"
   },
   {
     "name": "Robert",
     "gender": "M",
     "mean": "밝은 명성",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "BRIGHT"],
     "trend": "TREDY"
   },
   {
     "name": "Roman",
     "gender": "M",
     "mean": "로마의 시민",
-    "category": [],
+    "category": ["STRONG", "DIGNIFIED"],
     "trend": "TREDY"
   },
   {
     "name": "Rosalie",
     "gender": "F",
     "mean": "꽃",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "NATURAL"],
     "trend": "RARE"
   },
   {
     "name": "Russell",
     "gender": "M",
     "mean": "빨간 머리 또는 여우색",
-    "category": ["CUTE"],
+    "category": ["MASCULINE", "INTELLIGENT"],
     "trend": "CLASSIC"
   },
   {
     "name": "Ryan",
     "gender": "M",
     "mean": "작은 왕 또는 왕의 후손",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "STYLISH"],
     "trend": "ALLTIME"
   },
   {
     "name": "Ryder",
     "gender": "M",
     "mean": "기사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Ryker",
     "gender": "M",
     "mean": "부유한",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Samuel",
     "gender": "M",
     "mean": "하나님이 들으셨다",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Santiago",
     "gender": "M",
-    "mean": "성 야고보",
-    "category": ["RELIGIOUS"],
+    "mean": "하나님이 보호하시는 자, 용기",
+    "category": ["RELIGIOUS", "TRUTHFUL", "TRADITIONAL"],
     "trend": "TREDY"
   },
   {
     "name": "Sarah",
     "gender": "F",
     "mean": "공주",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "BEAUTIFUL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Sawyer",
     "gender": "M",
     "mean": "톱질하는 사람",
-    "category": ["MASCULINE"],
+    "category": ["MASCULINE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Scarlett",
     "gender": "F",
     "mean": "깊은 붉은색의 천, 매혹적인",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "ATTRACTIVE"],
     "trend": "TREDY"
   },
   {
     "name": "Scott",
     "gender": "M",
     "mean": "스코틀랜드 출신 또는 방랑자",
-    "category": ["CREATIVE"],
+    "category": ["CREATIVE", "TRADITIONAL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Sean",
     "gender": "M",
     "mean": "하나님은 은혜로우시다",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "WARM"],
     "trend": "CLASSIC"
   },
   {
     "name": "Sebastian",
     "gender": "M",
     "mean": "존경받는",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "ELEGANT"],
     "trend": "TREDY"
   },
   {
     "name": "Serena",
     "gender": "F",
     "mean": "고요한",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "CLASSIC"
   },
   {
     "name": "Shula",
     "gender": "F",
     "mean": "평화",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Silas",
     "gender": "M",
     "mean": "숲의 사람",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "TREDY"
   },
   {
     "name": "Silvia",
     "gender": "F",
     "mean": "숲에서 온",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "MYSTERIOUS"],
     "trend": "RARE"
   },
   {
     "name": "Simon",
     "gender": "M",
     "mean": "듣다 또는 듣는다",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "INTELLIGENT"],
     "trend": "CLASSIC"
   },
   {
@@ -2348,28 +2348,28 @@
     "name": "Sydney",
     "gender": "F",
     "mean": "넓은 섬",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "PEACEFUL"],
     "trend": "RARE"
   },
   {
     "name": "Teagan",
     "gender": "F",
     "mean": "예쁜, 공정한",
-    "category": ["BEAUTIFUL"],
+    "category": ["BEAUTIFUL", "PEACEFUL"],
     "trend": "RARE"
   },
   {
     "name": "Theodore",
     "gender": "M",
     "mean": "신의 선물",
-    "category": ["RELIGIOUS"],
+    "category": ["RELIGIOUS", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
     "name": "Thomas",
     "gender": "M",
     "mean": "쌍둥이, 대칭과 균형",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "INTELLIGENT"],
     "trend": "ALLTIME"
   },
   {
@@ -2383,168 +2383,168 @@
     "name": "Tiara",
     "gender": "F",
     "mean": "왕관",
-    "category": ["ROYAL"],
+    "category": ["ROYAL", "ELEGANT", "DIGNIFIED"],
     "trend": "RARE"
   },
   {
     "name": "Timothy",
     "gender": "M",
-    "mean": "하나님을 공경하다",
-    "category": ["RELIGIOUS"],
+    "mean": "명예, 존경, 신",
+    "category": ["RELIGIOUS", "ROYAL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Tinley",
     "gender": "F",
     "mean": "독창적인",
-    "category": ["CREATIVE"],
+    "category": ["CREATIVE", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Tristan",
     "gender": "M",
     "mean": "슬픔 또는 소란, 역사적, 문학적",
-    "category": [],
+    "category": ["STRONG", "MYSTERIOUS"],
     "trend": "TREDY"
   },
   {
     "name": "Truday",
     "gender": "F",
     "mean": "힘의 창",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "RARE"
   },
   {
     "name": "Valentina",
     "gender": "F",
     "mean": "건강하고, 강한",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Vanessa",
     "gender": "F",
     "mean": "나비",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "BEAUTIFUL"],
     "trend": "CLASSIC"
   },
   {
     "name": "Victor",
     "gender": "M",
     "mean": "승리자",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "COURAGEOUS"],
     "trend": "ALLTIME"
   },
   {
     "name": "Victoria",
     "gender": "F",
     "mean": "정복자, 승리의 여신",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "COURAGEOUS"],
     "trend": "ALLTIME"
   },
   {
     "name": "Vincent",
     "gender": "M",
     "mean": "정복하는",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "CHALLENGING"],
     "trend": "ALLTIME"
   },
   {
     "name": "Violet",
     "gender": "F",
     "mean": "보라색 꽃",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "ELEGANT"],
     "trend": "TREDY"
   },
   {
     "name": "Vivian",
     "gender": "F",
     "mean": "활발한",
-    "category": ["BRIGHT"],
+    "category": ["BRIGHT", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Viviana",
     "gender": "F",
     "mean": "생기 넘치는",
-    "category": ["BRIGHT"],
+    "category": ["BRIGHT", "CHEERFUL"],
     "trend": "RARE"
   },
   {
     "name": "Walker",
     "gender": "M",
     "mean": "여행자",
-    "category": ["CREATIVE"],
+    "category": ["CREATIVE", "CHALLENGING"],
     "trend": "TREDY"
   },
   {
     "name": "Waylon",
     "gender": "M",
     "mean": "도로 옆의 땅",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "STRONG"],
     "trend": "TREDY"
   },
   {
     "name": "Wesley",
     "gender": "M",
-    "mean": "서쪽 초원 또는 서쪽 개간지",
-    "category": ["NATURAL"],
+    "mean": "서쪽 초원",
+    "category": ["NATURAL", "PEACEFUL"],
     "trend": "ALLTIME"
   },
   {
     "name": "Weston",
     "gender": "M",
     "mean": "서쪽 마을",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "STYLISH"],
     "trend": "TREDY"
   },
   {
     "name": "Whitney",
     "gender": "F",
     "mean": "하얀 섬",
-    "category": ["NATURAL"],
+    "category": ["NATURAL", "STYLISH"],
     "trend": "CLASSIC"
   },
   {
     "name": "William",
     "gender": "M",
     "mean": "단호한 수호자",
-    "category": ["PEACEFUL"],
+    "category": ["PEACEFUL", "DIGNIFIED"],
     "trend": "ALLTIME"
   },
   {
     "name": "Winnie",
     "gender": "F",
-    "mean": "축복받은 조화",
-    "category": ["RELIGIOUS"],
+    "mean": "승리",
+    "category": ["HAPPY", "CUTE"],
     "trend": "RARE"
   },
   {
     "name": "Winston",
     "gender": "M",
-    "mean": "즐거운 돌 또는 승리의 돌",
-    "category": ["BRAVE"],
+    "mean": "친절한 마을의 사람",
+    "category": ["KIND", "HAPPY"],
     "trend": "RARE"
   },
   {
     "name": "Wyatt",
     "gender": "M",
     "mean": "전쟁에서 용감한 또는 전사",
-    "category": ["BRAVE"],
+    "category": ["BRAVE", "MASCULINE"],
     "trend": "TREDY"
   },
   {
     "name": "Wynter",
     "gender": "F",
-    "mean": "winter의 세련된 표기법",
-    "category": ["NATURAL"],
+    "mean": "겨울, 고요함",
+    "category": ["NATURAL", "MATURE"],
     "trend": "RARE"
   },
   {
     "name": "Xavier",
     "gender": "M",
     "mean": "새로운 집",
-    "category": ["WEALTHY"],
+    "category": ["WEALTHY", "BRIGHT"],
     "trend": "TREDY"
   },
   {
