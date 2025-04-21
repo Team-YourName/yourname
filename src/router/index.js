@@ -7,6 +7,7 @@ import QuestionGenderPage from '@/pages/QuestionGenderPage.vue';
 import QuestionTypePage from '@/pages/QuestionTypePage.vue';
 import QuestionMeaningPage from '@/pages/QuestionMeaningPage.vue';
 import QuestionMbtiPage from '@/pages/QuestionMbtiPage.vue';
+import MoreNamePage from '@/pages/MoreNamePage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
@@ -49,6 +50,11 @@ const routes = [
     path: '/result',
     name: 'ResultPage',
     component: ResultPage,
+},
+{
+    path: '/more-name',
+    name: 'MoreNamePage',
+    component: MoreNamePage,
 }
 ];
 
