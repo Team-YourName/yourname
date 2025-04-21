@@ -1,14 +1,13 @@
 <template>
-  <div id="app">
-  <div class="capture"> 
-    <div class="header-container">
-      <h2 class="title">So, 
-            <br>What’s your name?</h2>
-            <p class="title2">I am...</p>
-            <div class="line"></div>      
-    </div>
+    <div id="app" class="capture">
+        <div class="header-container">
+        <h2 class="title">So, 
+                <br>What’s your name?</h2>
+                <p class="title2">I am...</p>
+                <div class="line"></div>      
+        </div>
 
-    <div class="container">
+        <div class="container">
             <div class="content-container">
             <h1 class="name">{{ firstRecommendedName }}</h1>
                 <p class="content mb-4">{{ firstRecommendedName }}은 {{ firstRecommendedMean }}는 뜻의 
@@ -16,38 +15,101 @@
                 선택하신 {{ hashtagDescription }} 느낌들을 반영해보았어요!</p>
             </div>
             <p class="other-names mb-2">또 다른 이름이 궁금하신가요?</p>
-            <a href="#" class="link-button" @click.prevent="goToIntro">또 다른 이름 보기</a>
-
-        <div class="button-container">
-            <div class="save-share-container">
-            <button class="save-button" @click="downloadImage">Save</button>
-            <button class="share-button" @click="shareContent">Share</button>
+            <a href="#" class="link-button" @click="isMoreResultVisible" v-if="isShowMoreButtonVisible">또 다른 이름 보기</a>
+            <div class="other-name-container" v-show="isSecondNameVisible">
+                <div class="rank">2위</div>
+                <p class="other-name">{{ secondRecommendedName }}</p>
+                <p class="name-mean">{{ secondRecommendedNameMean }}</p>
             </div>
-            <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
+            <div class="other-name-container" v-show="isThirdNameVisible">
+                <div class="rank">3위</div>
+                <p class="other-name">{{ thirdRecommendedName }}</p>
+                <p class="name-mean">{{ thirdRecommendedNameMean }}</p>
+            </div>
+            <div class="other-name-container" v-show="isFourthNameVisible">
+                <div class="rank">4위</div>
+                <p class="other-name">{{ fourthRecommendedName }}</p>
+                <p class="name-mean">{{ fourthRecommendedNameMean }}</p>
+            </div>
+            <div class="other-name-container" v-show="isFifthNameVisible">
+                <div class="rank">5위</div>
+                <p class="other-name">{{ fifthRecommendedName }}</p>
+                <p class="name-mean">{{ fifthRecommendedNameMean }}</p>
+            </div>
+            <div class="other-name-container">
+                <a href="#" class="link-button" @click="setAside" v-show="isFoldVisible">접어두기</a>
+            </div>
+            
+            <div class="button-container">
+                <div class="save-share-container">
+                <button class="save-button" @click="downloadImage">Save</button>
+                <button class="share-button" @click="shareContent">Share</button>
+                </div>
+                <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
+            </div>
         </div>
+        
     </div>
-  </div>
-</div>
 </template>
-
 <script setup>
 import { onMounted, onActivated, computed, ref, nextTick } from 'vue';
 import html2canvas from 'html2canvas';
 import { useRouter } from 'vue-router';
+import { useNameStore } from '@/stores/NameStore'; 
 
 const router = useRouter();
+const nameStore = useNameStore();
 
-const recommendedNames = ref([]);
-const mbti = ref('');
-const trend = ref('');
-const meanings = ref([]);
+const isSecondNameVisible = ref(false);
+const isThirdNameVisible = ref(false);
+const isFourthNameVisible = ref(false);
+const isFifthNameVisible = ref(false);
+const isShowMoreButtonVisible = ref(true);
+const isFoldVisible = ref(false);
+
+const recommendedNames = computed(() => nameStore.recommendedNames);
+const mbti = computed(() => nameStore.mbti);
+const trend = computed(() => nameStore.trend);
+const meanings = computed(() => nameStore.meanings);
 
 const firstRecommendedName = computed(() => {
-  return recommendedNames.value.length > 0 ? recommendedNames.value[0].name : '이름 없음';
+  return recommendedNames.value.length > 0 ? recommendedNames.value[0]?.name : '이름 없음';
+});
+ 
+const firstRecommendedMean = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[0]?.mean : '의미 없음';
 });
 
-const firstRecommendedMean = computed(() => {
-  return recommendedNames.value.length > 0 ? recommendedNames.value[0].mean : '의미 없음';
+const secondRecommendedName = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[1]?.name : '이름 없음';
+});
+ 
+const secondRecommendedNameMean = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[1]?.mean : '의미 없음';
+});
+
+const thirdRecommendedName = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[2]?.name : '이름 없음';
+});
+ 
+const thirdRecommendedNameMean = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[2]?.mean : '의미 없음';
+});
+
+const fourthRecommendedName = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[3]?.name : '이름 없음';
+});
+ 
+const fourthRecommendedNameMean = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[3]?.mean : '의미 없음';
+});
+
+const fifthRecommendedName = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[4]?.name : '이름 없음';
+});
+ 
+const fifthRecommendedNameMean = computed(() => {
+  return recommendedNames.value.length > 0 ? recommendedNames.value[4]?.mean : '의미 없음';
 });
 
 const trendDescription = computed(() => {
@@ -56,17 +118,17 @@ const trendDescription = computed(() => {
 
 const mbtiDescription = computed(() => {
   return mbtiDescriptions[mbti.value] || '성격 설명 없음';
-});
+})
 
 const hashtagDescription = computed(() => {
   return meanings.value.length > 0 ? meanings.value.map((tag) => `#${tag}`).join(' ') : '해시태그 없음';
 });
 
 const trendDescriptions = {
-  modern: '최근 인기있는',
+  tredy: '최근 인기있는',
   classic: '예전부터 사랑받던',
-  unique: '흔하지 않은',
-  neutral: '호불호없이 좋은',
+  rare: '흔하지 않은',
+  alltime: '호불호없이 좋은',
 };
 
 const mbtiDescriptions = {
@@ -94,6 +156,24 @@ const goToIntro = () => {
   router.push('/'); 
 };
 
+const setAside = () => {
+  isSecondNameVisible.value = false; 
+  isThirdNameVisible.value = false;
+  isFourthNameVisible.value = false; 
+  isFifthNameVisible.value = false; 
+  isShowMoreButtonVisible.value = true;
+  isFoldVisible.value = false;
+};
+
+const isMoreResultVisible = () => {
+    isSecondNameVisible.value = true; 
+    isThirdNameVisible.value = true;
+    isFourthNameVisible.value = true; 
+    isFifthNameVisible.value = true; 
+    isShowMoreButtonVisible.value = false;
+    isFoldVisible.value = true;
+};
+
 const hideElements = () => {
   document.querySelector('.container').style.marginTop = '388px';
   document.querySelector('.other-names').style.display = 'none';
@@ -110,6 +190,10 @@ const restoreElements = () => {
   document.querySelector('.save-button').style.display = '';
   document.querySelector('.share-button').style.display = '';
   document.querySelector('.go-back-to-start-button').style.display = '';
+  
+  nextTick(() => {
+    isShowMoreButtonVisible.value = !(isSecondNameVisible.value || isThirdNameVisible.value || isFourthNameVisible.value || isFifthNameVisible.value);
+  });
 };
 
 const downloadImage = () => {
@@ -121,11 +205,15 @@ const downloadImage = () => {
 
       hideElements();
 
+      //const pageWidth = document.documentElement.scrollWidth; 
+      const pageHeight = document.documentElement.scrollHeight; 
+
       html2canvas(element, {
         scale: 2,
         useCORS: true,
+        //width: pageWidth,
         width: window.innerWidth,
-        height: window.innerHeight,
+        height: pageHeight, 
       })
         .then((canvas) => {
           const link = document.createElement('a');
@@ -143,8 +231,6 @@ const downloadImage = () => {
     });
   });
 };
-
-
 
 const shareContent = () => {
   if (navigator.share) {
@@ -176,7 +262,6 @@ function loadData() {
   meanings.value = JSON.parse(localStorage.getItem('meanings') || '[]');
 }
 </script>
-
 <style scoped>
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css); 
 
@@ -231,7 +316,6 @@ function loadData() {
   position: relative;
   left: -100px;
 }
-
 .name {
   font-family: 'San Francisco', sans-serif;
   text-align: center;
@@ -275,8 +359,40 @@ function loadData() {
   font-size: large;
   color: #252525;
 }
+.other-name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  justify-content: center; 
+  font-family: 'San Francisco', sans-serif;
+  font-style: normal;
+  color: #252525;
+}
+.rank {
+    position: relative;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+}
+.other-name {
+    position: relative;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57px;
+}
+.name-mean {
+    position: relative;
+    font-family: 'NanumSquare', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
 .link-button {
-  width: 250px;
   font-family: 'NanumSquare', sans-serif;
   font-weight: 100;
   font-size: 10px;
