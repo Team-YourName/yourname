@@ -91,7 +91,9 @@
     <div class="button-container mb-10">
     <div class="go-back-next-container">
       <button class="go-back-button" @click="goToQuestionMeaning">Go Back</button>
-      <button class="next-button" @click="goToLoading">Next</button>
+      <button class="next-button" 
+      :class="{ active: selectedMbti !== null }"
+      @click="goToLoading">Next</button>
     </div>
     <button class="go-back-to-start-button" @click="goToIntro">Go Back To Start</button>
   </div>
@@ -286,6 +288,11 @@ body {
   background-color: #B4B4B4;
   font-size: 18px; 
   transition: background-color 0.3s ease;
+}
+
+.next-button.active {
+  background-color: black; 
+  color: white;
 }
 
 .next-button:hover {

@@ -83,7 +83,8 @@
     <div class="button-container">
     <div class="go-back-next-container">
       <button class="go-back-button" @click="goToQuestionType">Go Back</button>
-      <button class="next-button"  
+      <button class="next-button" 
+        :class="{ active: selectedMeanings.length === 3 }" 
         :disabled="selectedMeanings.length !== 3"
         @click="goToQuestionMbti">Next
       </button>
@@ -286,6 +287,11 @@ body {
   background-color: #B4B4B4;
   font-size: 18px; 
   transition: background-color 0.3s ease;
+}
+
+.next-button.active {
+  background-color: black; 
+  color: white;
 }
 
 .next-button:hover {
