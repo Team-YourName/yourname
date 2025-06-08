@@ -23,6 +23,7 @@
     <div class="go-back-next-container">
       <button class="go-back-button" @click="goToDescription">Go Back</button>
       <button class="next-button" 
+        :class="{ active: selectedGender !== null }" 
         @click="goToQuestionType">Next
       </button>
     </div>
@@ -196,6 +197,11 @@ body {
   background-color: #B4B4B4;
   font-size: 18px; 
   transition: background-color 0.3s ease;
+}
+
+.next-button.active {
+  background-color: black; 
+  color: white;
 }
 
 .next-button:hover {
