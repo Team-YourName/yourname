@@ -7,71 +7,86 @@
       </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('도전적인') }"
+        :class="{ selected: selectedMeanings.includes('도전적인'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('도전적인')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('도전적인')"
         @click="toggleMeaning('도전적인')">도전적인
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('우아한') }"
+        :class="{ selected: selectedMeanings.includes('우아한') , disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('우아한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('우아한')"
         @click="toggleMeaning('우아한')">우아한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('창의적인') }"
+        :class="{ selected: selectedMeanings.includes('창의적인'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('창의적인')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('창의적인')"
         @click="toggleMeaning('창의적인')">창의적인
       </button>
     </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('따뜻한') }"
+        :class="{ selected: selectedMeanings.includes('따뜻한'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('따뜻한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('따뜻한')"
         @click="toggleMeaning('따뜻한')">따뜻한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('용감한') }"
+        :class="{ selected: selectedMeanings.includes('용감한'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('용감한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('용감한')"
         @click="toggleMeaning('용감한')">용감한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('매력적인') }"
+        :class="{ selected: selectedMeanings.includes('매력적인'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('매력적인')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('매력적인')"
         @click="toggleMeaning('매력적인')">매력적인
       </button>
     </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('품위있는') }"
+        :class="{ selected: selectedMeanings.includes('품위있는'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('품위있는')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('품위있는')"
         @click="toggleMeaning('품위있는')">품위있는
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('신비로운') }"
+        :class="{ selected: selectedMeanings.includes('신비로운'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('신비로운')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('신비로운')"
         @click="toggleMeaning('신비로운')">신비로운
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('밝은') }"
+        :class="{ selected: selectedMeanings.includes('밝은'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('밝은')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('밝은')"
         @click="toggleMeaning('밝은')">밝은
       </button>
     </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('진실된') }"
+        :class="{ selected: selectedMeanings.includes('진실된'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('진실된')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('진실된')"
         @click="toggleMeaning('진실된')">진실된
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('멋진') }"
+        :class="{ selected: selectedMeanings.includes('멋진'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('멋진')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('멋진')"
         @click="toggleMeaning('멋진')">멋진
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('강인한') }"
+        :class="{ selected: selectedMeanings.includes('강인한'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('강인한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('강인한')"
         @click="toggleMeaning('강인한')">강인한
       </button>
     </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('똑똑한') }"
+        :class="{ selected: selectedMeanings.includes('똑똑한'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('똑똑한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('똑똑한')"
         @click="toggleMeaning('똑똑한')">똑똑한
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('자연스러운') }"
+        :class="{ selected: selectedMeanings.includes('자연스러운'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('자연스러운')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('자연스러운')"
         @click="toggleMeaning('자연스러운')">자연스러운
       </button>
       <button class="custom-button" 
-        :class="{ selected: selectedMeanings.includes('행복한') }"
+        :class="{ selected: selectedMeanings.includes('행복한'), disabled: selectedMeanings.length >= 3 && !selectedMeanings.includes('행복한')}"
+        :disabled="selectedMeanings.length >= 3 && !selectedMeanings.includes('행복한')"
         @click="toggleMeaning('행복한')">행복한
       </button>
     </div>
@@ -251,12 +266,19 @@ body {
   color: white;
 }
 
+.custom-button.disabled {
+  background-color: inherit; 
+  color: inherit; 
+  cursor: not-allowed; 
+}
+
 .go-back-next-container {
   display: flex;
   flex-direction: row;
   justify-content: center; 
   gap: 10px;
 }
+
 .go-back-button {
   padding: 10px 22px;
   border-radius: 9999px; 
