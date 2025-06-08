@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: "San Francisco";
     font-weight: 100;
     src: url("@/assets/San-Francisco-Pro-Fonts-master/SF-Pro-Display-Ultralight.otf") format("opentype");
@@ -45,4 +45,7 @@
     font-weight: 800;
     src: url("@/assets/San-Francisco-Pro-Fonts-master/SF-Pro-Display-Black.otf") format("opentype");
   }
-  
+
+  html, body {
+    background-color: #EEEEEE;
+  }
