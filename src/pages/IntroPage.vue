@@ -143,7 +143,7 @@ const goToDescription = () => {
   text-align: center;
 }
 .line {
-  width: 110vw;
+  width: 130vw;
   height: 2px;
   background-color: black;
   position: absolute;
@@ -153,7 +153,7 @@ const goToDescription = () => {
 
 .intro-comment {
     position: absolute;
-    width: 110vw;
+    width: 100vw;
     height: 38px;
     left: 5px;
     top: 42px;
