@@ -232,18 +232,40 @@ const downloadImage = () => {
   });
 };
 
-const shareContent = () => {
-  if (navigator.share) {
-    navigator
-      .share({
+const shareContent = async () => {
+  isGeneratingImage.value = true;
+  const element = document.querySelector('.capture');
+
+  hideElements();
+
+  try {
+    const canvas = await html2canvas(element, {
+      scale: 2, 
+      useCORS: true,
+      width: window.innerWidth, 
+      height: document.documentElement.scrollHeight, 
+    });
+
+    const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+
+    const file = new File([blob], 'yourname-result.png', { type: 'image/png' });
+
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      await navigator.share({
+        files: [file],
         title: 'Your Name Result',
-        text: 'Check out my result from Your Name!',
-        url: window.location.href,
-      })
-      .then(() => console.log('공유 성공'))
-      .catch((error) => console.error('공유 중 오류 발생:', error));
-  } else {
-    alert('공유 기능이 이 브라우저에서 지원되지 않습니다.');
+        text: '제 이름을 확인해보세요!',
+      });
+      console.log('공유 성공');
+    } else {
+      alert('이미지 공유 기능이 이 브라우저에서 지원되지 않습니다.');
+    }
+  } catch (error) {
+    console.error('이미지 생성 또는 공유 중 오류 발생:', error);
+    alert('이미지 공유에 실패했습니다.');
+  } finally {
+    isGeneratingImage.value = false; 
+    restoreElements(); 
   }
 };
 
