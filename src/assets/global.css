@@ -48,4 +48,10 @@
 
   html, body {
     background-color: #EEEEEE;
+    width: 423px; 
+    height: 852px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden; 
   }
