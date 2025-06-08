@@ -10,8 +10,8 @@
         @click="selectType('classic')">클래식한
       </button>
       <button class="custom-button"
-        :class="{ selected: selectedType === 'trendy' }"
-        @click="selectType('trendy')" >트렌디한
+        :class="{ selected: selectedType === 'tredy' }"
+        @click="selectType('tredy')" >트렌디한
       </button>
       <button class="custom-button" 
         :class="{ selected: selectedType === 'rare' }"
@@ -66,7 +66,7 @@ const selectType = (type) => {
   if (type === 'classic') {
     typeMessage1.value = '옛날부터 사랑받던 이름은 이유가 있죠!';
     typeMessage2.value = '시간이 지나도 가치가 있을거예요.';
-  } else if (type === 'trendy') {
+  } else if (type === 'tredy') {
     typeMessage1.value = '최근 유행하는 인기이름을 찾고 계시는군요,';
     typeMessage2.value = '저희가 찾아드릴게요.';
   } else if (type === 'rare') {
