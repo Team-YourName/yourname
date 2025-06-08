@@ -2,8 +2,8 @@
     <div class="container">
       <div class="text-container mb-6">
         <h2 class="title mb-2">Question 3</h2>
-        <p class="content mb-4">어떤 뜻의 이름을 찾고 계신가요?
-            <br>최대 3개까지 택해보세요.</p>
+        <p class="content mb-4">어떤 느낌의 이름을 찾고 계신가요?
+            <br>원하는 느낌 3개를 선택해보세요.</p>
       </div>
     <div class="button-meaning-container">
       <button class="custom-button" 
@@ -118,9 +118,6 @@ const route = useRoute();
 const gender = route.query.gender;
 const type = route.query.type;
 
-console.log('Gender:', gender);
-console.log('Type:', type);
-
 const selectedMeanings = ref([]);
 const errorMessage = ref('');
 
@@ -128,11 +125,14 @@ const toggleMeaning = (meaning) => {
   if (selectedMeanings.value.includes(meaning)) {
     selectedMeanings.value = selectedMeanings.value.filter((m) => m !== meaning);
     errorMessage.value = ''; 
-  } else if (selectedMeanings.value.length < 3) {
+  } else if (selectedMeanings.value.length < 2) {
     selectedMeanings.value.push(meaning);
-    errorMessage.value = '최대 3개까지 더 고를 수 있어요!'; 
+    errorMessage.value = '3개를 선택해야 합니다.'; 
+  } else if (selectedMeanings.value.length === 2) {
+    selectedMeanings.value.push(meaning);
+    errorMessage.value = ''; 
   } else {
-    errorMessage.value = '최대 3개까지만 고를 수 있어요.';
+    errorMessage.value = '';
   }
 };
 
