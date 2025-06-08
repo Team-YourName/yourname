@@ -5,11 +5,16 @@
 <img width="1920" alt="Image" src="https://github.com/user-attachments/assets/9e63ec35-7970-430f-aaae-27876802aebd" />  
 <!--URL'-->
 
+## 목차
+[1. 프로젝트 소개](#프로젝트-소개)  
+[2. 기술스택](#기술스택)  
+[3. 이름추천과정](#이름추천과정)  
+[4. 데모시연](#시연영상)
 
 ## 프로젝트 소개
 + 프로젝트 이름 : What Is Your Name?
 + 프로젝트 기간 : 2024.12-2025.06
-+ 개발 엔진 및 언어 :
++ 개발 엔진 및 언어 : HTML, CSS, Javascript, Vue.js(Axios, router, pinia), Github Action, S3
 + 멤버 : 강보영 이승연
 
 ### 서비스 목적
@@ -20,9 +25,15 @@
 ‘What is your name?’ 프로젝트는 이러한 흐름에 맞춰, 사용자의 성향과 키워드를 기반으로 맞춤형 영어 이름을 추천합니다.  
 영어 이름의 단순한 추천을 넘어, 이름이 가진 의미를 함께 제시함으로써 자기표현의 재미와 몰입을 높이고자 했습니다.
 
-## 기술스택
+## 🔧기술스택
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">
+<img src="https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=Amazon%20S3&logoColor=white">
+<img src="https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white">
 
-## 기능소개
+## 이름추천과정
 본 서비스에 사용되는 이름데이터는 **미국 사회보장청(SSA)** 의 이름 등록 데이터 중 1980년대와 2020년대의 이름 데이터를 수집하여 병합했습니다.
 
 ### 메인화면
@@ -31,7 +42,7 @@
 'start' 버튼을 클릭하여 시작합니다.
 
 
-### 이름 추천 과정
+### 👩‍💻이름추천과정
 사용자는 **성별, 유행정도, 느낌, MBTI** 총 4가지 요소를 선택합니다.  
 사용자가 선택한 위 4가지 요소를 종합하여 해당 조건과 일치하는 이름들을 필터링 및 가중치 부여하고, 가장 높은 적합도를 가진 이름을 추천합니다.
 
@@ -50,7 +61,7 @@
 |클래식 (Classic)|1990년 기준 상위 50% 인기 이름|
 |트렌디 (Trendy)|2020년 기준 상위 50% 인기 이름|
 |독특한 (Rare)|두 시점 모두 상위 50% 밖|
-|무난한 (All-time)|두 시점 모두 상위 50%|
+|무난한 (All-time)|두 시점 모두 상위 50% 안|
 
 #### 3) 느낌 (의미)
 <img width="200" alt="Image" src="https://github.com/user-attachments/assets/f94a1eb8-cf3d-4170-ab86-c604dae0ad20" />  
@@ -72,4 +83,4 @@
 위 네가지 요소를 종합하여 해당 조건과 일치하는 이름들을 필터링하고, 가장 높은 적합도를 가진 이름을 추천합니다.  
 데이터와 사용자 성향을 기반으로 한 복합 탐색 결과로서, 최적의 영어이름을 5순위까지 추천합니다. 
 
-##
+## 시연영상
