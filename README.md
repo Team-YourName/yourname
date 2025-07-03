@@ -3,7 +3,7 @@
 > 왓이즈유어네임은 사용자의 성격, 선호하는 느낌을 바탕으로 영어이름을 추천하는 이름추천서비스입니다.
 
 <img width="1920" alt="Image" src="https://github.com/user-attachments/assets/9e63ec35-7970-430f-aaae-27876802aebd" />  
-<https://drxbhkylkp73h.cloudfront.net/>
+[왓이즈유어네임? 링크](https://drxbhkylkp73h.cloudfront.net/)
 
 ## 목차
 [1. 프로젝트 소개](#프로젝트-소개)  
