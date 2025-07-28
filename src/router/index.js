@@ -49,12 +49,24 @@ const routes = [
     path: '/result',
     name: 'ResultPage',
     component: ResultPage,
+},
+{
+    path: '/:pathMatch(.*)*',
+    redirect: '/',
 }
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+});
+
+router.beforeEach((to, from, next) => {
+    if (to.name === 'ResultPage' && !from.name) {
+      next('/');
+    } else {
+      next(); 
+    }
 });
   
 export default router;
